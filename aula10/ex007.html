@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Minha Calculadora</title>
+
+    <style>
+        div {
+            font: 1.5em arial;
+            width: 200px;
+            border: 3px solid black;
+            border-radius: 8px;
+            text-align: center;
+
+        }
+
+
+        input#ntxt1{
+            padding-top: 20px;
+            margin-top: -10%;
+            border: 1.5px solid black;
+        }
+
+        input#ntxt2{
+            padding-top: 20px;
+            margin-top: -10%;
+            border: 1.5px solid black;
+        }
+
+        button{
+            width: 40px;
+            line-height: 40px;
+        
+        }
+
+        p#resultado{
+            line-height: -3em;
+          margin-bottom: 50px;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <h1>Minha calculadora</h1>
+
+    <div>
+        <p>Primeiro número</p>
+        <input  id="ntxt1"  type="number">
+        <p>Segundo número </p>
+        <input id="ntxt2"  type="number"><br><br>
+        <button onclick="somar()">+</button>
+        <button onclick="subtrair()">-</button>
+        <button onclick="multiplicar()">*</button>
+        <button onclick="dividir()">/</button> 
+        <p id="resultado">O resultado é  <span></span></p>
+        <span></span>
+    </div>
+
+    
+    <script>
+        var n1 = document.querySelector('#ntxt1')
+        var n2 = document.querySelector('#ntxt2')
+        var resultado = document.querySelector ('span')
+
+        function somar() {
+            resultado.innerHTML = Number(n1.value) + Number(n2.value)
+        }
+
+        function subtrair() {
+            resultado.innerHTML = Number(n1.value) - Number(n2.value)
+        }
+
+        function multiplicar() {
+            resultado.innerHTML = Number(n1.value) * Number(n2.value)
+        }
+
+        function dividir() {
+            resultado.innerHTML = Number(n1.value) / Number(n2.value)
+        }
+       
+
+
+
+
+
+
+
+
+
+
+    </script>
+   
+
+</body>
+
+</html>

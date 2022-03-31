@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Nacionalidade</title>
+</head>
+
+
+<body>
+    <h1>Qual sua nacionalidade?</h1>
+
+
+    <div>
+        <input id="nac" type="text">
+        <input type="button" value="verificar" onclick="enviar()">
+
+    </div>
+
+
+
+    <p id="res"></p>
+
+    <p id="res2"></p>
+ 
+
+
+    <script>
+        function enviar() {
+
+            var input = window.document.querySelector("input#nac")
+            var res = window.document.querySelector('p#res')
+            var nacionalidade = input.value
+            if (nacionalidade != "Brasil") {
+                res.innerHTML = `<p>Seu páis é ${nacionalidade}.</p>`
+                res.innerHTML += `Você é estrangeiro!!`
+        
+        
+                
+                
+                
+
+
+
+
+
+
+
+
+
+            }
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de cidadania</title>
+</head>
+
+<body>
+    <h1>Qual é o seu País?</h1>
+
+    <div>
+        <input id="nac" type="text">
+        <input type="button" value="verificar" onclick="enviar()">
+
+    </div>
+
+
+
+    <p id="res"></p>
+
+    <script>
+        function enviar() {
+            var input1 = window.document.querySelector('#nac').value
+            var res = window.document.querySelector('#res')
+            if (input1 == "Brasil") {
+                res.innerHTML = `Você é um cidadão brasileiro!!`
+                if  (input1 != "Brasil") {
+                    document.getElementById('#res').innerHTML = `Você é estrangeiro!`
+
+                }  
+                
+                
+               
+            } 
+
+                
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>
