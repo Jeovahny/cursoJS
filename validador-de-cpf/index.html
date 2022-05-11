@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de cpf</title>
+    
+   
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="page-header">Validador de CPF</h1>
+            <p>Através deste simples algoritmo, veremos diversos recursos e habilidades da linguagem Javascript</p>
+        </div>
+
+    </div>
+    <div class="container formulario">
+        <form>
+            <div class="form-group">
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon" id="sizing-addon1">CPF</span>
+                    <input type="text" class="form-control" placeholder="Digite o cpf para validação ..."
+                        aria-describedby="sizing-addon1" id="cpf_digitado">
+                </div>
+                <small class="form-text text-muted">Digite somente numeros</small>
+            </div>
+            <button onclick="validacao()" type="button" class="btn btn-info">Validar !</button>
+        </form>
+    </div>
+    <div class="container page-header">
+        <div id="success" class="alert alert-success" style="display: none;" role="alert">
+            <strong>Oba!</strong> Seu CPF é válido
+        </div>
+        <div id="error" class="alert alert-danger" style="display: none;" role="alert">
+            <strong>Ops!</strong> Seu CPF não é válido
+        </div>
+    </div>
+
+    
+</body>
+
+    <script src="script.js"></script>
+</html>
